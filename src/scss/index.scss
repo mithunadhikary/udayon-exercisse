@@ -1,21 +1,162 @@
+@font-face {
+	font-family: "Kiron";
+	src: url("fonts/Kiron.eot?") format("eot"),
+		 url("fonts/Kiron.woff") format("woff"),
+		 url("fonts/Kiron.ttf") format("truetype"),
+		 url("fonts/Kiron.svg#Samplino") format("svg");
+}
+
 $body-color:#fff;
 $bg-1:#f7f7f7;
+
 $center:center;
+
+$container-max-width:1280px;
+$container-width:100%;
+
+$font-family: Kiron;
+
+$color1:#999999;
+$color2:#e2e2e2;
+$color3:#0099ff;
+$color4: #121212;
+$color5:#000000;
+
+$font-weight: 700;
+
+@for $i from 1 through 30 { 
+    .width-#{$i} {
+        width: $i + px;
+    }
+}
+
+@for $i from 14 through 40 { 
+    .font-size-#{$i + 2} {
+        font-size: $i + 2 + px;
+    }
+}
+
+@for $i from 0 through 40 {    
+    .ptb-#{$i} {
+        padding: $i + px;
+    }
+    .pt-#{$i} {
+        padding-top: $i + px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i + px;
+    }
+    .pl-#{$i} {
+        padding-left: $i + px;
+    }
+    .pr-#{$i} {
+        padding-right: $i + px;
+    }
+
+    .mtb-#{$i} {
+        margin: $i + px;
+    }
+    .mt-#{$i} {
+        margin-top: $i + px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i + px;
+    }
+    .ml-#{$i} {
+        margin-left: $i + px;
+    }
+    .mr-#{$i} {
+        margin-right: $i + px;
+    }
+}
 
 body{
     background: $body-color;
+    font-family: $font-family;
 }
 
 .bg-1{
     background: $bg-1;
 }
 
-@for $i from 0 through 4 {    
-    .ptb-#{$i * 5} {
-        padding: $i * 5 + px;
-    }
+.f-color{
+    color: $color1;
+}
+
+.color3{
+    color:$color3;
+}
+
+.f-weight-bold{
+    font-weight: $font-weight;
 }
 
 .center-align{
     text-align: $center;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.container{
+    width: $container-width;
+    max-width: $container-max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px
+}
+
+@for $i from 1 through 12 {    
+    .col-#{$i} {
+        grid-column:span $i;
+    }
+}
+
+.row{
+    display: flex;
+}
+
+.full-width{
+    flex-grow: 1
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.border-1{
+    border:1px solid $color2;
+}
+
+.list-style{
+    list-style: none;
+}
+
+ul{
+    text-align:center;
+    border-top:1px solid $color2;
+    border-bottom: 1px solid $color5;;
+    li{
+        display: inline-block;
+        a{
+            color: $color4;
+            &:hover {
+                color:$color3;
+            }
+        }
+    }
+}
+
+.text-deco-none{
+    text-decoration: none;
 }
