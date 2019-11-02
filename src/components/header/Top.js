@@ -9,7 +9,7 @@ import Logo from '../../images/logo.png';
 export default function Top(props) {
     return (
         <React.Fragment>
-            <div className="grid ptb-15">
+            <div className="grid pt-15 pb-15">
                 <div className="col-3">
                     <div className="row">
                         <div className="full-width">

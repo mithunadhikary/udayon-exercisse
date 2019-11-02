@@ -5,7 +5,7 @@ import Menu from './Menu'
 export default function Header(props) {
     return (
         <React.Fragment>
-            <div className="container">
+            <div className="container mb-20">
                 <Top />  
                 <Menu />       
             </div>

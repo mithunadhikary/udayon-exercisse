@@ -11,7 +11,7 @@ $bg-1:#f7f7f7;
 
 $center:center;
 
-$container-max-width:1280px;
+$container-max-width:1264px;
 $container-width:100%;
 
 $font-family: Kiron;
@@ -21,12 +21,38 @@ $color2:#e2e2e2;
 $color3:#0099ff;
 $color4: #121212;
 $color5:#000000;
+$color6:#555555;
 
 $font-weight: 700;
+
+a{
+    text-decoration: none;
+    &:hover h3{
+        color:$color3;
+    }
+}
+
+.height-65{
+    height: 65px;;
+}
+
+img.width100{
+    width: 100%;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
 
 @for $i from 1 through 30 { 
     .width-#{$i} {
         width: $i + px;
+    }
+}
+
+@for $i from 1 through 30 { 
+    .line-height-#{$i} {
+        line-height: $i + px;
     }
 }
 
@@ -37,9 +63,6 @@ $font-weight: 700;
 }
 
 @for $i from 0 through 40 {    
-    .ptb-#{$i} {
-        padding: $i + px;
-    }
     .pt-#{$i} {
         padding-top: $i + px;
     }
@@ -85,6 +108,14 @@ body{
 
 .color3{
     color:$color3;
+}
+
+.color4{
+    color: $color4;
+}
+
+.color6{
+    color: $color6;
 }
 
 .f-weight-bold{
