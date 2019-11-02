@@ -1,0 +1,21 @@
+$body-color:#fff;
+$bg-1:#f7f7f7;
+$center:center;
+
+body{
+    background: $body-color;
+}
+
+.bg-1{
+    background: $bg-1;
+}
+
+@for $i from 0 through 4 {    
+    .ptb-#{$i * 5} {
+        padding: $i * 5 + px;
+    }
+}
+
+.center-align{
+    text-align: $center;
+}

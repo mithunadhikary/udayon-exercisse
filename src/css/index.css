@@ -1,0 +1,31 @@
+body {
+  background: #fff;
+}
+
+.bg-1 {
+  background: #f7f7f7;
+}
+
+.ptb-0 {
+  padding: 0px;
+}
+
+.ptb-5 {
+  padding: 5px;
+}
+
+.ptb-10 {
+  padding: 10px;
+}
+
+.ptb-15 {
+  padding: 15px;
+}
+
+.ptb-20 {
+  padding: 20px;
+}
+
+.center-align {
+  text-align: center;
+}
