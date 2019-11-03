@@ -44,9 +44,25 @@ img.width100{
     overflow: hidden;
 }
 
-@for $i from 1 through 30 { 
-    .width-#{$i} {
-        width: $i + px;
+.border-bottom{
+    border-bottom:1px solid $color2;
+}
+
+.border-left{
+    border-left:1px solid $color2;
+}
+
+.border-right{
+    border-right:1px solid $color2;
+}
+
+.width-10{
+    width: 10px;;
+}
+
+@for $i from 1 through 2 { 
+    .flex-#{$i} {
+        flex: $i;
     }
 }
 
@@ -56,7 +72,7 @@ img.width100{
     }
 }
 
-@for $i from 14 through 40 { 
+@for $i from 10 through 40 { 
     .font-size-#{$i + 2} {
         font-size: $i + 2 + px;
     }

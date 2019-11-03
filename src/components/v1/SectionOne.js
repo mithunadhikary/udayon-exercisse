@@ -13,7 +13,7 @@ export default function SectionOne(props) {
     return (
         
         <React.Fragment>
-            <div className="container">
+            <div className="container border-bottom pb-20 mb-40 border-bottom">
                 <Heading headerTitle={"আমার পছন্দ"}/>
 
                 <div className="grid">

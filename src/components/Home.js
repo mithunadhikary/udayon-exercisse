@@ -1,6 +1,7 @@
 
 import React, {Component} from 'react'
 import ComponentV1 from './v1/SectionOne';
+import ComponentV2 from './v2/SectionTwo';
 
 export default class Home extends Component {
 	constructor(props){
@@ -31,6 +32,7 @@ export default class Home extends Component {
       <React.Fragment>
                   
         <ComponentV1 />
+        <ComponentV2 />
 
          {/* {this.state.allData.map((data) => (
                 console.log(data)
