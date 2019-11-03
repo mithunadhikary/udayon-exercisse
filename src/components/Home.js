@@ -2,6 +2,9 @@
 import React, {Component} from 'react'
 import ComponentV1 from './v1/SectionOne';
 import ComponentV2 from './v2/SectionTwo';
+import ComponentV3 from './v3/SectionThree';
+import ComponentV4 from './v4/SectionFour';
+import ComponentV5 from './v5/SectionFive';
 
 export default class Home extends Component {
 	constructor(props){
@@ -33,6 +36,9 @@ export default class Home extends Component {
                   
         <ComponentV1 />
         <ComponentV2 />
+        <ComponentV3 />
+        <ComponentV4 />
+        <ComponentV5 />
 
          {/* {this.state.allData.map((data) => (
                 console.log(data)
