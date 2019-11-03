@@ -1,11 +1,10 @@
 import React from 'react';
-import Heading from '../../components/common/Header';
-import BoxSix from '../../components/common/BoxSix';
-import BoxSeven from '../../components/common/BoxSeven';
-import image7 from '../../images/news/image-7.png';
-import image8 from '../../images/news/image-8.png';
-import image9 from '../../images/news/image-9.png';
-import image10 from '../../images/news/image-10.png';
+import HeadingTwo from '../../components/common/HeaderTwo';
+import BoxEight from '../../components/common/BoxEight';
+import BoxNine from '../../components/common/BoxNine';
+import BoxTen from '../../components/common/BoxTen';
+import image11 from '../../images/news/image-11.png';
+import image12 from '../../images/news/image-12.png';
 
 
 export default function SectionFive(props) {
@@ -14,38 +13,88 @@ export default function SectionFive(props) {
         
         <React.Fragment>
             <div className="container border-bottom pb-20 mb-30">
-                <Heading headerTitle={"বিজ্ঞান ও প্রযুক্তি"}/>
-
+                
                 <div className="grid">
 
-                    <div className="col-6 border-right pr-12">
-                        <BoxSix data ={{
-                            image:image7,
-                            title:'ডেটা জার্নালিজম–বিষয়ক প্রশিক্ষণ কর্মশালা অনুষ্ঠিত'                            
+                    <div className="col-3">
+                        <HeadingTwo headerTitle={"আন্তর্জাতিক"}/>
+                        <BoxEight data ={{
+                            image:image11,
+                            title:'জম্মু-কাশ্মীরে স্বাভাবিক পরিস্থিতি ফেরাতে আদালতের নির্দেশ'                            
+                        }}/>
+
+                        <BoxNine data ={{
+                            title:'এনআরসি ও ভাষানীতি নিয়ে ভূমিকায় কলকাতায় বুদ্ধিজীবীদের ক্ষোভ'                            
+                        }}/>
+
+                        <BoxNine data ={{
+                            title:'আফগান প্রেসিডেন্টের নির্বাচনী সমাবেশে বোমা হামলায় নিহত ২৪'                            
+                        }}/>
+
+                        <BoxTen data ={{
+                            title:'আরও খবর'                            
                         }}/>
                     </div> 
-                    
-                    <div className="col-2">
-                        <BoxSeven data ={{
-                            image:image8,
-                            title:'স্মার্টফোন হারানোর আগে ও পরে কী করবেন'                            
-                        }}/>
-                    </div>  
 
-                    <div className="col-2">
-                        <BoxSeven data ={{
-                            image:image9,
-                            title:'টিকে থাকতে অ্যাপলের নতুন কৌশল'                            
+                    <div className="col-3">
+                        <HeadingTwo headerTitle={"জীবনযাপন"}/>
+                        <BoxEight data ={{
+                            image:image12,
+                            title:'দেশলাইয়ের বাক্সে লুকিয়ে রাখা যাবে মসলিন, সিল্ক, নকশিকাঁথাসহ কত'                            
                         }}/>
-                    </div>  
 
-                    <div className="col-2">
-                        <BoxSeven data ={{
-                            image:image10,
-                            title:'মোবাইল থেকে যে ২৪ অ্যাপ এখনই সরিয়ে'                            
+                        <BoxNine data ={{
+                            title:'ঈদের দিন হালকা মেকআপ নেওয়াটাই হবে বুদ্ধিমানের কাজ'                            
                         }}/>
-                    </div>                 
-                   
+
+                        <BoxNine data ={{
+                            title:'সন্তানের চলার পথ রুদ্ধ করে দিচ্ছেন না তো?'                            
+                        }}/>
+
+                        <BoxTen data ={{
+                            title:'আরও খবর'                            
+                        }}/>
+                    </div> 
+
+                    <div className="col-3">
+                        <HeadingTwo headerTitle={"উত্তর আমেরিকা"}/>
+                        <BoxEight data ={{
+                            image:image11,
+                            title:'পরীক্ষায় মেয়ের উত্তর ঠিক করতে ঘুষ, মার্কিন অভিনেত্রীর সাজা'                            
+                        }}/>
+
+                        <BoxNine data ={{
+                            title:'মার্কিন সেনাবাহিনীতে বাংলাদেশি আফিয়া'                            
+                        }}/>
+
+                        <BoxNine data ={{
+                            title:'লাইসেন্স প্লেটের জন্য পঞ্চম নকশাই নির্বাচিত হলো শেষ পর্যন্ত'                            
+                        }}/>
+
+                        <BoxTen data ={{
+                            title:'আরও খবর'                            
+                        }}/>
+                    </div> 
+
+                    <div className="col-3">
+                        <HeadingTwo headerTitle={"ENGLISH"}/>
+                        <BoxEight data ={{
+                            image:image12,
+                            title:'Saudi Arabia sends back 160 Bangladeshi workers'                            
+                        }}/>
+
+                        <BoxNine data ={{
+                            title:'Arrested man killed in ‘gunfight’Arrested man killed in ‘gunfight’'                            
+                        }}/>
+
+                        <BoxNine data ={{
+                            title:'‘The essence of democracy is participation, freedom of expression’'                            
+                        }}/>
+
+                        <BoxTen data ={{
+                            title:'More'                            
+                        }}/>
+                    </div> 
 
                 </div>
             </div>

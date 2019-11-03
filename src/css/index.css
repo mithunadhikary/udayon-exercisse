@@ -23,6 +23,10 @@ img.width100 {
   overflow: hidden;
 }
 
+.border {
+  border: 1px solid #e2e2e2;
+}
+
 .border-bottom {
   border-bottom: 1px solid #e2e2e2;
 }
@@ -257,6 +261,46 @@ img.width100 {
 
 .line-height-32 {
   line-height: 32px;
+}
+
+.line-height-33 {
+  line-height: 33px;
+}
+
+.line-height-34 {
+  line-height: 34px;
+}
+
+.line-height-35 {
+  line-height: 35px;
+}
+
+.line-height-36 {
+  line-height: 36px;
+}
+
+.line-height-37 {
+  line-height: 37px;
+}
+
+.line-height-38 {
+  line-height: 38px;
+}
+
+.line-height-39 {
+  line-height: 39px;
+}
+
+.line-height-40 {
+  line-height: 40px;
+}
+
+.line-height-41 {
+  line-height: 41px;
+}
+
+.line-height-42 {
+  line-height: 42px;
 }
 
 .font-size-12 {
@@ -1868,6 +1912,14 @@ body {
   background: #f7f7f7;
 }
 
+.bg-2 {
+  background: #121212;
+}
+
+.bg-3 {
+  background: #222222;
+}
+
 .bg-1-9 {
   background: #f7f7f7e6;
 }
@@ -1886,6 +1938,10 @@ body {
 
 .color6 {
   color: #555555;
+}
+
+.color7 {
+  color: #ffffff;
 }
 
 .f-weight-bold {
@@ -1913,6 +1969,10 @@ body {
 
 .display-inline-block {
   display: inline-block;
+}
+
+.display-inherit {
+  display: inherit;
 }
 
 .grid {
@@ -2021,4 +2081,28 @@ ul li a:hover {
 
 .position-absolute {
   position: absolute;
+}
+
+.video-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 5%;
+  cursor: pointer;
+  transition-duration: 500ms;
+  bottom: 5%;
+}
+
+.video-icon-2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 5%;
+  cursor: pointer;
+  transition-duration: 500ms;
+  bottom: 10%;
 }
