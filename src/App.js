@@ -3,6 +3,8 @@ import './css/index.css';
 import TopAds from './components/ads/TopAds';
 import Header from './components/header/Header';
 import Home from './components/Home';
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 
 window.API = {
 
@@ -25,6 +27,8 @@ function App() {
        <TopAds />
        <Header />
        <Home />
+       <Footer />
+       <Copyright />
     </React.Fragment>
   );
 }

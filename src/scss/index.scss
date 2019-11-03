@@ -43,6 +43,10 @@ img.width100{
     width: 100%;
 }
 
+img.footer-logo{
+    width: 155px;
+}
+
 .overflow-hidden{
     overflow: hidden;
 }
@@ -235,7 +239,17 @@ body{
 ul{
     text-align:center;
     border-top:1px solid $color2;
-    border-bottom: 1px solid $color5;;
+    border-bottom: 1px solid $color5;
+    &.footer-menu{
+        padding: 0;
+        border:none;
+        text-align: left;       
+    }
+    &.copyright-menu{
+        padding: 0;        
+        margin: 0;
+        border:none;
+    }
     li{
         display: inline-block;
         a{

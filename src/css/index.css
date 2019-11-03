@@ -19,6 +19,10 @@ img.width100 {
   width: 100%;
 }
 
+img.footer-logo {
+  width: 155px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2057,6 +2061,18 @@ ul {
   text-align: center;
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #000000;
+}
+
+ul.footer-menu {
+  padding: 0;
+  border: none;
+  text-align: left;
+}
+
+ul.copyright-menu {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 ul li {
