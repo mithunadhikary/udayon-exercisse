@@ -1,0 +1,219 @@
+@media screen and (max-width: 1280px){
+    .container{
+        max-width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1140px)  {
+    .container{
+        max-width: calc(100% - 30px);
+    }
+}
+
+@media only screen and (max-width: 1140px){
+    .container{
+        max-width: 1024px;
+    }
+    .add-show-mobile{
+        display: inline-block;
+    }
+    .add-show-desktop{
+        display: none;
+    }
+
+    @for $i from 1 through 12 {    
+        .col-tb-#{$i} {
+            grid-column:span $i;
+        }
+    }
+
+    @for $i from 10 through 40 { 
+        .tb-font-size-#{$i + 2} {
+            font-size: $i + 2 + px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1139px) and (min-width: 1024px)  {
+    .container{
+        max-width: calc(100% - 30px);
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+        max-width: 846px;
+    }
+    .t-display-none{
+        display: none;
+    }
+    @for $i from 1 through 12 {    
+        .col-t-#{$i} {
+            grid-column:span $i;
+        }
+    }
+    @for $i from 10 through 40 { 
+        .t-font-size-#{$i + 2} {
+            font-size: $i + 2 + px;
+        }
+    }
+    @for $i from 1 through 42 { 
+        .t-line-height-#{$i} {
+            line-height: $i + px;
+        }
+    }
+    .t-float-left{
+        float: left;
+    }
+    .t-pl-0{
+        padding-left:0;
+    }
+    .t-left-align{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 876px)  {
+    .container{
+        max-width: calc(100% - 30px);
+    }
+}
+
+@media only screen and (max-width: 876px){
+    .container{
+        max-width: 738px;
+    }
+    @for $i from 1 through 12 {    
+        .col-m-#{$i} {
+            grid-column:span $i;
+        }
+    }    
+    .m-center-align{
+        text-align: center;
+    }
+    .m-float-none{
+        float: none;
+    }
+    .m-mr-0{
+        margin-right:0;
+    }
+    .m-display-none{
+        display: none;
+    }
+    .m-display-block{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px)  {
+    .container{
+        max-width: calc(100% - 30px);
+    }
+    .s-display-none{
+        display: none;
+    }
+    .s-img-r-h3-l{
+        border-top: 1px solid #e2e2e2;
+        padding-top: 15px;
+    }
+    .s-img-r-h3-l p{
+        display: none;
+    }
+    .s-img-r-h3-l img{
+        float: right;
+        width: 30%;
+    }
+    .s-img-r-h3-l h3{
+        float: left;
+        width: 70%;
+        height: auto;
+        font-size: 18px;
+    }
+    @for $i from 1 through 12 {    
+        .col-s-#{$i} {
+            grid-column:span $i;
+        }
+    } 
+    @for $i from 10 through 40 { 
+        .s-font-size-#{$i + 2} {
+            font-size: $i + 2 + px;
+        }
+    }
+    @for $i from 1 through 42 { 
+        .s-line-height-#{$i} {
+            line-height: $i + px;
+        }
+    }
+    .s-display-block{
+        display: block;
+    }
+    .j-1-full{
+        grid-area: 1 / span 12;
+    }
+    .s-border-none{
+        border:none
+    }
+    .s-p-l-0{
+        padding-left: 0;
+    }
+    .s-p-r-0{
+        padding-right: 0;
+    }
+    .s-pt-15{
+        padding-top: 15px;
+    }
+    .s-pb-15{
+        padding-bottom: 15px;
+    }
+    .s-ml-20{
+        margin-left:20px;
+    }
+    .s-mb-20{
+        margin-bottom:20px;
+    }
+    .s-mt-0{
+        margin-top: 0;
+    }
+    @for $i from 1 through 2 { 
+        .s-flex-order-#{$i} {
+            order: $i;
+        }
+        .s-flex-#{$i} {
+            flex: $i;
+        }
+    }
+    .flex-right-img-none .flex-1{
+        display: none;
+    }
+    .s-flex-d-c{
+        flex-direction: column;
+    }
+    .s-row-flex-d-r{
+        display: flex;
+        flex-direction: row;
+    }
+    .video-icon{
+        width: 48px;
+        height: 48px;
+    }
+    .video-icon-2{
+        width: 32px;
+        height: 32px;
+        bottom: 12%;
+    }
+    .s-width-100{
+        width: 100%;
+    }
+    .s-bg-none{
+        background: none;
+    }
+    .s-row{
+        display: flex;
+    }
+    .s-position-initial{
+        position: initial;
+    }
+    .s-float-left{
+        float: left;
+    }
+}

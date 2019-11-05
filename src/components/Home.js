@@ -34,13 +34,12 @@ export default class Home extends Component {
     return(
         
       <React.Fragment>
-                  
-        <ComponentV1 />
+        <ComponentV1 />         
         <ComponentV2 />
         <ComponentV3 />
         <ComponentV6 />
         <ComponentV4 />
-        <ComponentV5 />
+        <ComponentV5 /> 
 
          {/* {this.state.allData.map((data) => (
                 console.log(data)

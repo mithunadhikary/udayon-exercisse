@@ -296,3 +296,9 @@ ul{
     transition-duration: 500ms;
     bottom: 10%;
 }
+
+.add-show-mobile{
+    display: none;
+}
+
+@import 'responsive';

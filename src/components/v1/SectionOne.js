@@ -18,7 +18,7 @@ export default function SectionOne(props) {
 
                 <div className="grid">
 
-                    <div className="col-3">
+                    <div className="col-3 col-m-6 col-s-12">
                         <BoxOne data ={{
                             image:image1,
                             title:'নাটোরে বিশ্বভারতী',
@@ -26,7 +26,7 @@ export default function SectionOne(props) {
                         }}/>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-3 col-m-6 col-s-12 s-img-r-h3-l s-p-n">
                         <BoxOne data ={{
                             image:image2,
                             title:'আজ থেকে জয়া ও প্রসেনজিৎকে নিয়ে',
@@ -34,7 +34,7 @@ export default function SectionOne(props) {
                         }}/>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-3 col-m-6 col-s-12 s-img-r-h3-l s-p-n">
                         <BoxOne data ={{
                             image:image3,
                             title:'‘ভারত-বাংলাদেশ ফিল্ম অ্যাওয়ার্ড’ ২১ অক্টোবর',
@@ -42,7 +42,7 @@ export default function SectionOne(props) {
                         }}/>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-3 col-m-6 col-s-12 s-img-r-h3-l s-p-n">
                         <BoxOne data ={{
                             image:image4,
                             title:'মেয়েকে নিয়ে অস্ট্রেলিয়ায় গাইতে যাচ্ছেন ন্যান্‌সি',

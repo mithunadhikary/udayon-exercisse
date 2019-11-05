@@ -16,7 +16,7 @@ export default function SectionFive(props) {
                 
                 <div className="grid">
 
-                    <div className="col-3">
+                    <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"আন্তর্জাতিক"}/>
                         <BoxEight data ={{
                             image:image11,
@@ -36,7 +36,7 @@ export default function SectionFive(props) {
                         }}/>
                     </div> 
 
-                    <div className="col-3">
+                    <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"জীবনযাপন"}/>
                         <BoxEight data ={{
                             image:image12,
@@ -56,7 +56,7 @@ export default function SectionFive(props) {
                         }}/>
                     </div> 
 
-                    <div className="col-3">
+                    <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"উত্তর আমেরিকা"}/>
                         <BoxEight data ={{
                             image:image11,
@@ -76,7 +76,7 @@ export default function SectionFive(props) {
                         }}/>
                     </div> 
 
-                    <div className="col-3">
+                    <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"ENGLISH"}/>
                         <BoxEight data ={{
                             image:image12,

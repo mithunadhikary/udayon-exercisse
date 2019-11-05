@@ -18,7 +18,7 @@ export default function SectionThree(props) {
 
                 <div className="grid">
 
-                    <div className="col-6 border-right pr-12">
+                    <div className="col-6 col-s-12 border-right pr-12 s-border-none s-p-r-0">
                         <BoxFour data ={{
                             image:image6,
                             title:'ঢাকা ওয়াসা বিল কালেকশন অ্যাওয়ার্ড পেল',
@@ -28,7 +28,7 @@ export default function SectionThree(props) {
                         }}/>
                     </div> 
                     
-                    <div className="col-6">
+                    <div className="col-6 col-s-12">
                         <BoxFive data ={{
                             image:image1,
                             title:'জাতীয় ফার্নিচার মেলা শুরু, আসবাব রপ্তানি বাড়াতে বন্ড–সুবিধা চান উদ্যোক্তারা',

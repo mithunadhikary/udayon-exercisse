@@ -19,7 +19,7 @@ export default function SectionTwo(props) {
 
                 <div className="grid">
 
-                    <div className="col-4">
+                    <div className="col-4 col-s-12 ">
                         <BoxTwo data ={{
                             image:image1,
                             title:'নাটোরে বিশ্বভারতী শান্তিনিকেতনের পরিবেশনায় ‘বর্ষামঙ্গল’',
@@ -49,17 +49,17 @@ export default function SectionTwo(props) {
                         }}/>
                     </div>
 
-                    <div className="col-4 border-left border-right pl-10 pr-10">
+                    <div className="col-4 col-s-12 j-1-full border-left border-right pl-10 pr-10 s-border-none s-p-l-0 s-p-r-0">
                         <BoxThree data ={{
                             image:image5,
-                            title:'শিল্পী পলিন, মডেল নিপুণ, বাজেট ৩০ লাখ',
+                            title:'শিল্পী পলিন, মডেল নিপুণ',
                             excerpt: 'প্রধান অতিথি শিরীন শারমিন চৌধুরী বলেন, ‘দুই বোনের এই অসাধারণ আয়োজনে আসতে পেরে আমার ভালো লাগছে',
                             tag:'বাংলা গান',
                             time:'১৬ মিনিট আগে' 
                         }}/>
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-4 col-s-12 flex-right-img-none">
                         <BoxTwo data ={{
                             image:image1,
                             title:'নাটোরে বিশ্বভারতী শান্তিনিকেতনের পরিবেশনায় ‘বর্ষামঙ্গল’',

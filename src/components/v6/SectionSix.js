@@ -22,7 +22,7 @@ export default function SectionSix(props) {
 
                     <div className="grid">
 
-                        <div className="col-12 mb-10">
+                        <div className="col-12 col-s-12 mb-10">
                             <BoxEleven data ={{
                                 image:image13,
                                 title:'ফমুর্লা ওয়ান ট্র্যাকে বাংলাদেশের তৌহিদ আনোয়ার',
@@ -31,7 +31,7 @@ export default function SectionSix(props) {
                             }}/>
                         </div>  
 
-                        <div className="col-3">
+                        <div className="col-3 col-s-12">
                             
                             <BoxTweleve data ={{
                                 image:image14,
@@ -40,7 +40,7 @@ export default function SectionSix(props) {
 
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-3 col-s-12">
                             
                             <BoxTweleve data ={{
                                 image:image15,
@@ -49,7 +49,7 @@ export default function SectionSix(props) {
 
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-3 col-s-12">
                             
                             <BoxTweleve data ={{
                                 image:image16,
@@ -58,7 +58,7 @@ export default function SectionSix(props) {
 
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-3 col-s-12">
                             
                             <BoxTweleve data ={{
                                 image:image17,

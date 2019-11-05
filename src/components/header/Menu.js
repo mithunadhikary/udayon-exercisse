@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Menu(props) {
     return (
-        <div className="container">
+        <div className="container m-display-none">
             <div className="menu-container">
                 <ul className="mtb-0 ptb-0">
                     <li className="list-style pt-12 pb-12">

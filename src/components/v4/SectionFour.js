@@ -18,28 +18,28 @@ export default function SectionFour(props) {
 
                 <div className="grid">
 
-                    <div className="col-6 border-right pr-12">
+                    <div className="col-6 col-t-3 col-s-12 border-right pr-12">
                         <BoxSix data ={{
                             image:image7,
                             title:'ডেটা জার্নালিজম–বিষয়ক প্রশিক্ষণ কর্মশালা অনুষ্ঠিত'                            
                         }}/>
                     </div> 
                     
-                    <div className="col-2">
+                    <div className="col-2 col-t-3 col-s-12">
                         <BoxSeven data ={{
                             image:image8,
                             title:'স্মার্টফোন হারানোর আগে ও পরে কী করবেন'                            
                         }}/>
                     </div>  
 
-                    <div className="col-2">
+                    <div className="col-2 col-t-3 col-s-12">
                         <BoxSeven data ={{
                             image:image9,
                             title:'টিকে থাকতে অ্যাপলের নতুন কৌশল'                            
                         }}/>
                     </div>  
 
-                    <div className="col-2">
+                    <div className="col-2 col-t-3 col-s-12">
                         <BoxSeven data ={{
                             image:image10,
                             title:'মোবাইল থেকে যে ২৪ অ্যাপ এখনই সরিয়ে'                            

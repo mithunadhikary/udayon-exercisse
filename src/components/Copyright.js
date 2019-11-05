@@ -5,13 +5,13 @@ export default function Copyright(props) {
         <React.Fragment>
             <div className="container">
                 <div className="grid mb-15">
-                    <div className="col-3">
+                    <div className="col-3 col-t-12">
                         <span className="f-color font-size-14">© প্রথম আলো ২০১৯</span>
                     </div> 
-                    <div className="col-6">
-                        <ul className="copyright-menu">
+                    <div className="col-6 col-t-12">
+                        <ul className="copyright-menu t-float-left">
                             <li>
-                                <a className="font-size-14 pl-15 pr-15 f-color" href="#">
+                                <a className="font-size-14 pl-15 t-pl-0 pr-15 f-color" href="#">
                                     Terms & Condition
                                 </a>
                             </li>
@@ -37,7 +37,7 @@ export default function Copyright(props) {
                             </li>
                         </ul>
                     </div>  
-                    <div className="col-3 right-align">
+                    <div className="col-3 col-t-12 right-align t-left-align">
                         <span className="f-color font-size-14">সম্পাদক ও প্রকাশক: মতিউর রহমান</span>
                     </div>  
                 </div>     

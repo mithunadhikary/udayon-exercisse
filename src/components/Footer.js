@@ -6,7 +6,7 @@ export default function Footer(props) {
         <React.Fragment>
             <div className="container">
                 <div className="grid border-bottom mb-10">
-                    <div className="col-8">
+                    <div className="col-8 col-t-12">
                         <a href="#">
                             <img src={Logo} alt="Logo" className="footer-logo" />
                         </a>
@@ -34,7 +34,7 @@ export default function Footer(props) {
                             </li>
                         </ul>
                     </div> 
-                    <div className="col-4">
+                    <div className="col-4 col-t-12">
                         
                     </div>   
                 </div>     
