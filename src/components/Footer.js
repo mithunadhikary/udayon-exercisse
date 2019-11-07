@@ -6,7 +6,7 @@ export default function Footer(props) {
         <React.Fragment>
             <div className="container">
                 <div className="grid border-bottom mb-10">
-                    <div className="col-8 col-t-12">
+                    <div className="col-8 col-t-12 s-align-center">
                         <a href="#">
                             <img src={Logo} alt="Logo" className="footer-logo" />
                         </a>

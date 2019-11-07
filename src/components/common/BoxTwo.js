@@ -4,8 +4,8 @@ export default function BoxTwo(props) {
    
     return (
         <React.Fragment>
-            <a href="#">
-                <div className="row border-bottom mb-8">
+            <a href="#" key={props.id}>
+                <div className="row border-bottom mb-7">
                     <div className="flex-1 mr-15 t-display-none s-display-block s-flex-order-2">
                         <img className="width100" src={props.data.image}/>
                     </div>

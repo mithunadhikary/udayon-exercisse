@@ -13,39 +13,40 @@ export default function SectionFour(props) {
     return (
         
         <React.Fragment>
-            <div className="container border-bottom pb-20 mb-30">
+            <div className="container border-bottom s-border-none pb-20 mb-30">
                 <Heading headerTitle={"বিজ্ঞান ও প্রযুক্তি"}/>
 
                 <div className="grid">
 
-                    <div className="col-6 col-t-3 col-s-12 border-right pr-12">
-                        <BoxSix data ={{
-                            image:image7,
-                            title:'ডেটা জার্নালিজম–বিষয়ক প্রশিক্ষণ কর্মশালা অনুষ্ঠিত'                            
-                        }}/>
-                    </div> 
-                    
-                    <div className="col-2 col-t-3 col-s-12">
-                        <BoxSeven data ={{
-                            image:image8,
-                            title:'স্মার্টফোন হারানোর আগে ও পরে কী করবেন'                            
-                        }}/>
-                    </div>  
+                    {props.allData.slice(6, 7).map((data) => (
 
-                    <div className="col-2 col-t-3 col-s-12">
-                        <BoxSeven data ={{
-                            image:image9,
-                            title:'টিকে থাকতে অ্যাপলের নতুন কৌশল'                            
-                        }}/>
-                    </div>  
+                        <div key={data.id} className="col-6 col-t-3 col-s-12 border-right s-border-none s-border-bottom pr-12 s-p-r-0">
 
-                    <div className="col-2 col-t-3 col-s-12">
-                        <BoxSeven data ={{
-                            image:image10,
-                            title:'মোবাইল থেকে যে ২৪ অ্যাপ এখনই সরিয়ে'                            
-                        }}/>
-                    </div>                 
-                   
+                            <BoxSix data ={{
+                                key:data.id,
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline
+                                                        
+                            }}/>
+
+                        </div>
+
+                    ))}
+
+                    {props.allData.slice(7, 10).map((data) => (
+
+                        <div key={data.id} className="col-2 col-t-3 col-s-12 s-border-bottom s-pb-15">
+
+                            <BoxSeven data ={{
+                                key:data.id,
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline
+                                                        
+                            }}/>
+
+                        </div>
+
+                    ))}
 
                 </div>
             </div>

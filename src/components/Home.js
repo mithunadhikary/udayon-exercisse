@@ -14,13 +14,11 @@ export default class Home extends Component {
         this.state = {
             allData: [],
         }
-	}
-
-  
+	}  
 
 	componentDidMount (){
-        this.fetchData()
-    }
+      this.fetchData()
+  }
 
     async fetchData() {
         const {stories} = await  window.API.fetchPopularDatas();
@@ -34,12 +32,12 @@ export default class Home extends Component {
     return(
         
       <React.Fragment>
-        <ComponentV1 />         
-        <ComponentV2 />
-        <ComponentV3 />
-        <ComponentV6 />
-        <ComponentV4 />
-        <ComponentV5 /> 
+        <ComponentV1 allData={this.state.allData}/>         
+        <ComponentV2 allData={this.state.allData}/>
+        <ComponentV3 allData={this.state.allData}/>
+        <ComponentV6 allData={this.state.allData}/>
+        <ComponentV4 allData={this.state.allData}/>
+        <ComponentV5 allData={this.state.allData}/> 
 
          {/* {this.state.allData.map((data) => (
                 console.log(data)

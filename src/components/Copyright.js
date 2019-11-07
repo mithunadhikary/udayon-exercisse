@@ -5,7 +5,7 @@ export default function Copyright(props) {
         <React.Fragment>
             <div className="container">
                 <div className="grid mb-15">
-                    <div className="col-3 col-t-12">
+                    <div className="col-3 col-t-12 s-align-center">
                         <span className="f-color font-size-14">© প্রথম আলো ২০১৯</span>
                     </div> 
                     <div className="col-6 col-t-12">

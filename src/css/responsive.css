@@ -781,6 +781,9 @@
   .s-border-none {
     border: none;
   }
+  .s-border-bottom {
+    border-bottom: 1px solid #e2e2e2;
+  }
   .s-p-l-0 {
     padding-left: 0;
   }
@@ -789,6 +792,9 @@
   }
   .s-pt-15 {
     padding-top: 15px;
+  }
+  .s-pb-10 {
+    padding-bottom: 10px;
   }
   .s-pb-15 {
     padding-bottom: 15px;
@@ -847,5 +853,17 @@
   }
   .s-float-left {
     float: left;
+  }
+  .s-fixed-height-style-1 {
+    height: 200px;
+  }
+  .s-align-center {
+    text-align: center;
+  }
+  ul.footer-menu {
+    text-align: center;
+  }
+  ul.footer-menu li {
+    margin-bottom: 10px;
   }
 }

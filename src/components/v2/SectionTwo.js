@@ -14,79 +14,55 @@ export default function SectionTwo(props) {
     return (
         
         <React.Fragment>
-            <div className="container border-bottom pb-20 mb-30">
+            <div className="container border-bottom s-border-none pb-20 mb-30">
                 <Heading headerTitle={"বিনোদন"}/>
 
                 <div className="grid">
 
                     <div className="col-4 col-s-12 ">
-                        <BoxTwo data ={{
-                            image:image1,
-                            title:'নাটোরে বিশ্বভারতী শান্তিনিকেতনের পরিবেশনায় ‘বর্ষামঙ্গল’',
-                            tag:'বাংলা গান',
-                            time:'১৬ মিনিট আগে'                            
-                        }}/>
 
-                        <BoxTwo data ={{
-                            image:image2,
-                            title:'আজ থেকে জয়া ও প্রসেনজিৎকে নিয়ে ‘রবিবার’',
-                            tag:'ক্রিকেট',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
+                        {props.allData.slice(6, 10).map((data) => (
 
-                        <BoxTwo data ={{
-                            image:image3,
-                            title:'‘ভারত-বাংলাদেশ ফিল্ম অ্যাওয়ার্ড’ ২১ অক্টোবর',
-                            tag:'ক্রিকেট',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
-
-                        <BoxTwo data ={{
-                            image:image4,
-                            title:'মেয়েকে নিয়ে অস্ট্রেলিয়ায় গাইতে যাচ্ছেন ন্যান্‌সি',
-                            tag:'ক্রিকেট',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
+                            <BoxTwo key={data.id} data ={{
+                                key:data.id,
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline,
+                                tag:'ক্রিকেট',
+                                time:'১৬ মিনিট আগে'                           
+                            }}/>
+                        ))}
+                        
                     </div>
 
-                    <div className="col-4 col-s-12 j-1-full border-left border-right pl-10 pr-10 s-border-none s-p-l-0 s-p-r-0">
-                        <BoxThree data ={{
-                            image:image5,
-                            title:'শিল্পী পলিন, মডেল নিপুণ',
-                            excerpt: 'প্রধান অতিথি শিরীন শারমিন চৌধুরী বলেন, ‘দুই বোনের এই অসাধারণ আয়োজনে আসতে পেরে আমার ভালো লাগছে',
-                            tag:'বাংলা গান',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
+                    <div className="col-4 col-s-12 j-1-full border-left border-right pl-10 pr-10 s-border-none s-border-bottom s-pb-10 s-p-l-0 s-p-r-0">
+                        
+                        {props.allData.slice(8, 9).map((data) => (
+
+                            <BoxThree key={data.id} data ={{
+                                key:data.id,
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline,
+                                tag:'ক্রিকেট',
+                                excerpt: 'প্রধান অতিথি শিরীন শারমিন চৌধুরী বলেন, ‘দুই বোনের এই অসাধারণ আয়োজনে আসতে পেরে আমার ভালো লাগছে',
+                                time:'১৬ মিনিট আগে'                           
+                            }}/>
+                        ))}
+                     
                     </div>
 
                     <div className="col-4 col-s-12 flex-right-img-none">
-                        <BoxTwo data ={{
-                            image:image1,
-                            title:'নাটোরে বিশ্বভারতী শান্তিনিকেতনের পরিবেশনায় ‘বর্ষামঙ্গল’',
-                            tag:'বাংলা গান',
-                            time:'১৬ মিনিট আগে'                            
-                        }}/>
 
-                        <BoxTwo data ={{
-                            image:image2,
-                            title:'আজ থেকে জয়া ও প্রসেনজিৎকে নিয়ে ‘রবিবার’',
-                            tag:'ক্রিকেট',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
+                        {props.allData.slice(9, 13).map((data) => (
 
-                        <BoxTwo data ={{
-                            image:image3,
-                            title:'‘ভারত-বাংলাদেশ ফিল্ম অ্যাওয়ার্ড’ ২১ অক্টোবর',
-                            tag:'ক্রিকেট',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
-
-                        <BoxTwo data ={{
-                            image:image4,
-                            title:'মেয়েকে নিয়ে অস্ট্রেলিয়ায়',
-                            tag:'ক্রিকেট',
-                            time:'১৬ মিনিট আগে' 
-                        }}/>
+                            <BoxTwo key={data.id} data ={{
+                                key:data.id,
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline,
+                                tag:'বাংলা গান',
+                                time:'১৬ মিনিট আগে'                           
+                            }}/>
+                        ))}
+                        
                     </div>
                    
 

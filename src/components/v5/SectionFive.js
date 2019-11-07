@@ -12,24 +12,29 @@ export default function SectionFive(props) {
     return (
         
         <React.Fragment>
-            <div className="container border-bottom pb-20 mb-30">
+            <div className="container border-bottom s-border-none pb-20 mb-30">
                 
                 <div className="grid">
 
                     <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"আন্তর্জাতিক"}/>
-                        <BoxEight data ={{
-                            image:image11,
-                            title:'জম্মু-কাশ্মীরে স্বাভাবিক পরিস্থিতি ফেরাতে আদালতের নির্দেশ'                            
-                        }}/>
 
-                        <BoxNine data ={{
-                            title:'এনআরসি ও ভাষানীতি নিয়ে ভূমিকায় কলকাতায় বুদ্ধিজীবীদের ক্ষোভ'                            
-                        }}/>
+                        {props.allData.slice(10, 11).map((data) => (
 
-                        <BoxNine data ={{
-                            title:'আফগান প্রেসিডেন্টের নির্বাচনী সমাবেশে বোমা হামলায় নিহত ২৪'                            
-                        }}/>
+                            <BoxEight key={data.id} data ={{
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline                                                           
+                            }}/>                            
+
+                        ))}
+                        
+                        {props.allData.slice(11, 13).map((data) => (
+
+                            <BoxNine key={data.id} data ={{
+                                title:data.headline                                                           
+                            }}/>                            
+
+                        ))}
 
                         <BoxTen data ={{
                             title:'আরও খবর'                            
@@ -38,18 +43,23 @@ export default function SectionFive(props) {
 
                     <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"জীবনযাপন"}/>
-                        <BoxEight data ={{
-                            image:image12,
-                            title:'দেশলাইয়ের বাক্সে লুকিয়ে রাখা যাবে মসলিন, সিল্ক, নকশিকাঁথাসহ কত'                            
-                        }}/>
 
-                        <BoxNine data ={{
-                            title:'ঈদের দিন হালকা মেকআপ নেওয়াটাই হবে বুদ্ধিমানের কাজ'                            
-                        }}/>
+                        {props.allData.slice(13, 14).map((data) => (
 
-                        <BoxNine data ={{
-                            title:'সন্তানের চলার পথ রুদ্ধ করে দিচ্ছেন না তো?'                            
-                        }}/>
+                            <BoxEight key={data.id} data ={{
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline                                                           
+                            }}/>                            
+
+                        ))}
+
+                        {props.allData.slice(14, 16).map((data) => (
+
+                            <BoxNine key={data.id} data ={{
+                                title:data.headline                                                           
+                            }}/>                            
+
+                        ))}
 
                         <BoxTen data ={{
                             title:'আরও খবর'                            
@@ -58,19 +68,24 @@ export default function SectionFive(props) {
 
                     <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"উত্তর আমেরিকা"}/>
-                        <BoxEight data ={{
-                            image:image11,
-                            title:'পরীক্ষায় মেয়ের উত্তর ঠিক করতে ঘুষ, মার্কিন অভিনেত্রীর সাজা'                            
-                        }}/>
 
-                        <BoxNine data ={{
-                            title:'মার্কিন সেনাবাহিনীতে বাংলাদেশি আফিয়া'                            
-                        }}/>
+                        {props.allData.slice(16, 17).map((data) => (
 
-                        <BoxNine data ={{
-                            title:'লাইসেন্স প্লেটের জন্য পঞ্চম নকশাই নির্বাচিত হলো শেষ পর্যন্ত'                            
-                        }}/>
+                            <BoxEight key={data.id} data ={{
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline                                                           
+                            }}/>                            
 
+                        ))}
+                       
+                        {props.allData.slice(17, 19).map((data) => (
+
+                            <BoxNine key={data.id} data ={{
+                                title:data.headline                                                           
+                            }}/>                            
+
+                        ))}
+                       
                         <BoxTen data ={{
                             title:'আরও খবর'                            
                         }}/>
@@ -78,19 +93,24 @@ export default function SectionFive(props) {
 
                     <div className="col-3 col-t-6 col-s-12 s-mb-20">
                         <HeadingTwo headerTitle={"ENGLISH"}/>
-                        <BoxEight data ={{
-                            image:image12,
-                            title:'Saudi Arabia sends back 160 Bangladeshi workers'                            
-                        }}/>
+                       
+                        {props.allData.slice(19, 20).map((data) => (
 
-                        <BoxNine data ={{
-                            title:'Arrested man killed in ‘gunfight’Arrested man killed in ‘gunfight’'                            
-                        }}/>
+                            <BoxEight key={data.id} data ={{
+                                image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                title:data.headline                                                           
+                            }}/>                            
 
-                        <BoxNine data ={{
-                            title:'‘The essence of democracy is participation, freedom of expression’'                            
-                        }}/>
+                        ))}
 
+                        {props.allData.slice(0, 2).map((data) => (
+
+                            <BoxNine key={data.id} data ={{
+                                title:data.headline                                                           
+                            }}/>                            
+
+                        ))}
+                      
                         <BoxTen data ={{
                             title:'More'                            
                         }}/>

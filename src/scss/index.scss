@@ -79,7 +79,7 @@ img.footer-logo{
     }
 }
 
-@for $i from 1 through 20 { 
+@for $i from 0 through 20 { 
     .bottom-#{$i} {
         bottom: $i + px;
     }
@@ -299,6 +299,10 @@ ul{
 
 .add-show-mobile{
     display: none;
+}
+
+.width100{
+    width: 100%;;
 }
 
 @import 'responsive';

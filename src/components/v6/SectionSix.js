@@ -23,49 +23,34 @@ export default function SectionSix(props) {
                     <div className="grid">
 
                         <div className="col-12 col-s-12 mb-10">
-                            <BoxEleven data ={{
-                                image:image13,
-                                title:'ফমুর্লা ওয়ান ট্র্যাকে বাংলাদেশের তৌহিদ আনোয়ার',
-                                tag:'বাংলা গান',
-                                time:'১৬ মিনিট আগে'                            
-                            }}/>
-                        </div>  
 
-                        <div className="col-3 col-s-12">
-                            
-                            <BoxTweleve data ={{
-                                image:image14,
-                                title:'নাটোরে বিশ্বভারতী শান্তিনিকেতনের পরিবেশনায় ‘বর্ষামঙ্গল’'                                                           
-                            }}/>
+                            {props.allData.slice(17, 18).map((data) => (
 
-                        </div>
+                                <BoxEleven key={data.id} data ={{
+                                    key:data.id,
+                                    image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                    title:data.headline,
+                                    tag:'বাংলা গান',                          
+                                    time:'১৬ মিনিট আগে'                           
+                                }}/>
+                            ))}
 
-                        <div className="col-3 col-s-12">
-                            
-                            <BoxTweleve data ={{
-                                image:image15,
-                                title:'আজ থেকে জয়া ও প্রসেনজিৎকে নিয়ে ‘রবিবার’'                                                           
-                            }}/>
+                        </div>                    
 
-                        </div>
+                        {props.allData.slice(0, 4).map((data) => (
 
-                        <div className="col-3 col-s-12">
-                            
-                            <BoxTweleve data ={{
-                                image:image16,
-                                title:'‘ভারত-বাংলাদেশ ফিল্ম অ্যাওয়ার্ড’ ২১ অক্টোবর'                                                           
-                            }}/>
+                            <div key={data.id} className="col-3 col-s-12">
 
-                        </div>
+                                <BoxTweleve  data ={{
+                                    key:data.id,
+                                    image:'http://thumbor-stg.assettype.com/'+data["hero-image-s3-key"],
+                                    title:data.headline
+                                                            
+                                }}/>
 
-                        <div className="col-3 col-s-12">
-                            
-                            <BoxTweleve data ={{
-                                image:image17,
-                                title:'মেয়েকে নিয়ে অস্ট্রেলিয়ায় গাইতে যাচ্ছেন ন্যান্‌সি'                                                           
-                            }}/>
-
-                        </div>
+                            </div>
+                        
+                        ))}                       
 
                     </div>
                 </div>
